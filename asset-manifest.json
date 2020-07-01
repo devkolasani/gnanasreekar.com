@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gnanasreekar.com/static/css/main.0376093f.chunk.css",
+    "main.js": "/gnanasreekar.com/static/js/main.1d6e7a78.chunk.js",
+    "main.js.map": "/gnanasreekar.com/static/js/main.1d6e7a78.chunk.js.map",
+    "runtime-main.js": "/gnanasreekar.com/static/js/runtime-main.d09d677e.js",
+    "runtime-main.js.map": "/gnanasreekar.com/static/js/runtime-main.d09d677e.js.map",
+    "static/js/2.b4dfd0d0.chunk.js": "/gnanasreekar.com/static/js/2.b4dfd0d0.chunk.js",
+    "static/js/2.b4dfd0d0.chunk.js.map": "/gnanasreekar.com/static/js/2.b4dfd0d0.chunk.js.map",
+    "index.html": "/gnanasreekar.com/index.html",
+    "precache-manifest.881006604082a87e0f8fba727cc645cc.js": "/gnanasreekar.com/precache-manifest.881006604082a87e0f8fba727cc645cc.js",
+    "service-worker.js": "/gnanasreekar.com/service-worker.js",
+    "static/css/main.0376093f.chunk.css.map": "/gnanasreekar.com/static/css/main.0376093f.chunk.css.map",
+    "static/js/2.b4dfd0d0.chunk.js.LICENSE.txt": "/gnanasreekar.com/static/js/2.b4dfd0d0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d09d677e.js",
+    "static/js/2.b4dfd0d0.chunk.js",
+    "static/css/main.0376093f.chunk.css",
+    "static/js/main.1d6e7a78.chunk.js"
+  ]
+}
