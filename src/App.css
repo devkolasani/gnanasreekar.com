@@ -1,0 +1,11 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    font-size: 8vw;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: wheat;
+    background-color: #161623;
+    place-items: center;
+}
