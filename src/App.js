@@ -7,10 +7,10 @@ import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <Menu />
       <Hero />
-    </React.Fragment>
+    </>
   );
 }
 

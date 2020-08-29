@@ -1,5 +1,84 @@
-.Container {
+.Hero {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  align-items: flex-end;
+  justify-items: center;
   background: #161623;
+
+  .Container {
+    width: 80%;
+    height: 84%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      ". . . . . ."
+      "Content Content Content Content Content Content"
+      "Content Content Content Content Content Content"
+      ". . . . . ."
+      "Footer Footer Footer Footer Footer Footer"
+      ". . . . . .";
+  }
+}
+
+.Content {
+  display: flex;
+  grid-area: Content;
+  align-items: center;
+  justify-content: space-between;
+
+  .Title {
+    p {
+      margin: 0;
+      color: white;
+      font-size: 10vh;
+      font-weight: bold;
+      font-family: GothamPro;
+    }
+
+    .TitleBar {
+      width: 4vw;
+      height: 1.8vh;
+      margin-top: 2vh;
+      border-radius: 5px;
+      background: #efa649;
+    }
+  }
+
+  .Skills {
+    margin-right: 5vw;
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 4vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .Skill {
+      display: flex;
+      margin-top: 1.5vh;
+      align-items: center;
+
+      p {
+        color: #bcbabc;
+        font-size: 2.8vh;
+      }
+
+      .SkillDot {
+        height: 1vh;
+        background-origin: left;
+        margin-left: 1vh;
+        margin-right: 1.5vw;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+.Footer {
+  grid-area: Footer;
+  display: none;
 }

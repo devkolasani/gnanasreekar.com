@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // Styles and Components
 import styles from "./Menu.module.scss";
@@ -7,7 +8,11 @@ import MenuItem from "./MenuItem";
 const Menu = () => {
   return (
     <div className={styles.Menu}>
-      <div className={styles.Container}>
+      <motion.div
+        className={styles.Container}
+        initial={{ y: -10 }}
+        animate={{ y: 0 }}
+      >
         <div className={styles.Logo}>
           <p>RGS.</p>
         </div>
@@ -16,7 +21,7 @@ const Menu = () => {
           <MenuItem ItemName="About" />
           <MenuItem ItemName="Contact" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
