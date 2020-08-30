@@ -1,22 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="57" viewBox="0 0 33 57">
   <defs>
     <style>
-      .cls-1, .cls-3 {
+      .a,
+      .b,
+      .d {
         fill: none;
       }
 
-      .cls-1 {
+      .a {
         stroke: #707070;
         stroke-width: 6px;
       }
 
-      .cls-2 {
+      .b {
+        stroke: #f1f1f1;
+        stroke-linecap: round;
+        stroke-width: 10px;
+      }
+
+      .c {
         stroke: none;
       }
     </style>
   </defs>
-  <g id="Mouse" class="cls-1" transform="translate(6 6)">
-    <rect class="cls-2" width="21" height="45" rx="10.5"/>
-    <rect class="cls-3" x="-3" y="-3" width="27" height="51" rx="13.5"/>
+  <g transform="translate(-1683 -897)">
+    <g class="a" transform="translate(1689 903)">
+      <rect class="c" width="21" height="45" rx="10.5" />
+      <rect class="d" x="-3" y="-3" width="27" height="51" rx="13.5" />
+    </g>
+    <line class="b" y2="8" transform="translate(1699.5 912.5)" />
   </g>
 </svg>
