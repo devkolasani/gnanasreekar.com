@@ -1,27 +1,55 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 // Styles and Components
-import styles from "./Menu.module.scss";
 import MenuItem from "./MenuItem";
+import styles from "./Menu.module.scss";
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <div className={styles.Menu}>
-      <motion.div
-        className={styles.Container}
-        initial={{ y: -10 }}
-        animate={{ y: 0 }}
-      >
-        <div className={styles.Logo}>
-          <p>RGS.</p>
-        </div>
+      <div className={styles.Container}>
+        <Link
+          to="Hero"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+        >
+          <div className={styles.Logo}>
+            <p>RGS.</p>
+          </div>
+        </Link>
         <div className={styles.MenuItems}>
-          <MenuItem ItemName="Work" />
-          <MenuItem ItemName="About" />
-          <MenuItem ItemName="Contact" />
+          <Link
+            spy={true}
+            to="Work"
+            smooth={true}
+            duration={1000}
+            activeClass="active"
+          >
+            <MenuItem ItemName="Work" />
+          </Link>
+          <Link
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            activeClass="active"
+          >
+            <MenuItem ItemName="About" />
+          </Link>
+          <Link
+            to="Contact"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            activeClass="active"
+          >
+            <MenuItem ItemName="Contact" />
+          </Link>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

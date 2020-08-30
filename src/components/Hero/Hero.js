@@ -9,7 +9,7 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <div className={styles.Hero}>
+    <div id="Hero" className={styles.Hero}>
       <div className={styles.Container}>
         <div className={styles.Content}>
           <Title />

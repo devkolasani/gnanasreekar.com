@@ -4,7 +4,8 @@
   display: grid;
   align-items: flex-end;
   justify-items: center;
-  background: rgba($color: #161623, $alpha: 0.9);
+  background: #161623;
+  scroll-snap-align: start;
 
   .Container {
     width: 80%;

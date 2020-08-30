@@ -3,13 +3,24 @@
 
 body {
   margin: 0;
-  cursor: default;
-  scroll-behavior: smooth;
+  background: #161623;
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Styling */
+body::-webkit-scrollbar {
+  width: 1vh; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #161623; /* color of the whole area */
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 1vh;
+  background-color: #efa649; /* color of the live area */
 }
 
 code {
