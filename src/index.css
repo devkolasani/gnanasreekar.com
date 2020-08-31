@@ -4,6 +4,8 @@
 body {
   margin: 0;
   background: #161623;
+  scrollbar-width: thin;
+  scrollbar-color: #efa649 #161623;
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
