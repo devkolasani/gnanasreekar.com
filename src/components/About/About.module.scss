@@ -11,14 +11,78 @@
     width: 80%;
     height: 84%;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-      ". . . . . ."
-      "Content Content Content Content Content Content"
-      "Content Content Content Content Content Content"
-      ". . . . . ."
-      "Footer Footer Footer Footer Footer Footer"
-      ". . . . . .";
+      "Title Title . . . . . ."
+      "Title Title . . . Illustration Illustration Illustration"
+      "Description Description Description Description . Illustration Illustration Illustration"
+      "Description Description Description Description . Illustration Illustration Illustration"
+      "Description Description Description Description . Illustration Illustration Illustration"
+      ". . . . . Illustration Illustration Illustration "
+      "Download Download . . . Illustration Illustration Illustration "
+      ". . . . . . . .";
+  }
+
+  .Title {
+    display: grid;
+    grid-area: Title;
+    place-items: center flex-start;
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 4.5vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .TitleBar {
+      width: 3vw;
+      height: 1vh;
+      margin-top: 0.8vh;
+      border-radius: 5px;
+      background: #efa649;
+    }
+  }
+
+  .Description {
+    display: grid;
+    grid-area: Description;
+    place-items: center flex-start;
+
+    p {
+      margin: 0;
+      color: #bcbabc;
+      font-size: 2.8vh;
+      font-weight: 500;
+      line-height: 125%;
+      font-family: Montserrat;
+    }
+  }
+
+  .Download {
+    display: grid;
+    grid-area: Download;
+    place-items: center flex-start;
+
+    a {
+      margin: 0;
+      color: #efa649;
+      font-size: 2.8vh;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: Montserrat;
+    }
+  }
+
+  .Illustration {
+    display: grid;
+    place-items: center flex-end;
+    grid-area: Illustration;
+
+    .IllustrationContent {
+      height: 70%;
+    }
   }
 }

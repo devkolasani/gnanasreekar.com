@@ -1,12 +1,40 @@
 import React from "react";
 
-// Styles And Modules
+// Styles, Assets And Modules
+import Illustration from "./AboutArt";
+import Resume from "../../assets/Resume.pdf";
 import styles from "./About.module.scss";
 
 const About = () => {
   return (
     <div className={styles.About} id="About">
-      <div className={styles.Container}></div>
+      <div className={styles.Container}>
+        <div className={styles.Title}>
+          <div className={styles.TitleContent}>
+            <p>About</p>
+            <div className={styles.TitleBar}></div>
+          </div>
+        </div>
+        <div className={styles.Description}>
+          <p>
+            Hello, I'm Gnana Sreekar. How's it going? I'm an Android developer
+            based in India and a hardware geek. I love working on IoT projects
+            like automating my home. I'm a tech enthusiast and started a YouTube
+            channel that focuses on all things tech.
+          </p>
+        </div>
+        <div className={styles.Download}>
+          <a
+            href={Resume}
+            target="_blank"
+            download="Resume.pdf"
+            rel="noopener noreferrer"
+          >
+            Download Resume
+          </a>
+        </div>
+        <Illustration />
+      </div>
     </div>
   );
 };
