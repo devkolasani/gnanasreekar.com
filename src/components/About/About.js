@@ -6,6 +6,11 @@ import Resume from "../../assets/Resume.pdf";
 import styles from "./About.module.scss";
 
 const About = () => {
+  let desc = `Hello, I'm Gnana Sreekar. How's it going?\n\
+I'm an Android developer based in India and a hardware geek. \
+I love working on IoT projects like automating my home.\
+I'm a tech enthusiast, have a YouTube channel that focuses on all things tech.`;
+
   return (
     <div className={styles.About} id="About">
       <div className={styles.Container}>
@@ -16,12 +21,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.Description}>
-          <p>
-            Hello, I'm Gnana Sreekar. How's it going? I'm an Android developer
-            based in India and a hardware geek. I love working on IoT projects
-            like automating my home. I'm a tech enthusiast and started a YouTube
-            channel that focuses on all things tech.
-          </p>
+          <p>{desc}</p>
         </div>
         <div className={styles.Download}>
           <a

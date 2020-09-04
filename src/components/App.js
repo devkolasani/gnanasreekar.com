@@ -7,13 +7,16 @@ import Hero from "./Hero/Hero";
 import Work from "./Work/Work";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import WorkContextProvider from "../contexts/WorkContext";
 
 function App() {
   return (
     <div className="App">
       <Menu />
       <Hero />
-      <Work />
+      <WorkContextProvider>
+        <Work />
+      </WorkContextProvider>
       <About />
       <Contact />
     </div>
