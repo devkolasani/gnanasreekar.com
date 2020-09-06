@@ -32,6 +32,7 @@ const Title = () => {
         variants={TitleVariants}
         className={styles.TitleBar}
       ></motion.div>
+      <div className={styles.TitleBarMobile}></div>
     </motion.div>
   );
 };

@@ -7,12 +7,14 @@ import Hero from "./Hero/Hero";
 import Work from "./Work/Work";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import MenuMobile from "./MenuMobile/MenuMobile";
 import WorkContextProvider from "../contexts/WorkContext";
 
 function App() {
   return (
     <div className="App">
       <Menu />
+      <MenuMobile />
       <Hero />
       <WorkContextProvider>
         <Work />

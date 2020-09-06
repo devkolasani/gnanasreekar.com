@@ -1,128 +1,253 @@
-.Hero {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  align-items: flex-end;
-  justify-items: center;
-  background: #161623;
-  scroll-snap-align: start;
-
-  .Container {
-    width: 80%;
-    height: 84%;
+@media only screen and (min-width: 500px) {
+  .Hero {
+    width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      ". . . . . ."
-      "Content Content Content Content Content Content"
-      "Content Content Content Content Content Content"
-      ". . . . . ."
-      "Footer Footer Footer Footer Footer Footer"
-      ". . . . . .";
-  }
-}
+    align-items: flex-end;
+    justify-items: center;
+    background: #161623;
+    scroll-snap-align: start;
 
-.Content {
-  display: grid;
-  grid-area: Content;
-  align-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: "Title Title . . . . Skills Skills";
-
-  .Title {
-    grid-area: Title;
-
-    p {
-      margin: 0;
-      color: white;
-      font-size: 10vh;
-      font-weight: bold;
-      font-family: GothamPro;
-    }
-
-    .TitleBar {
-      width: 4vw;
-      height: 1.8vh;
-      margin-top: 2vh;
-      border-radius: 5px;
-      background: #efa649;
+    .Container {
+      width: 80%;
+      height: 84%;
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        ". . . . . ."
+        "Content Content Content Content Content Content"
+        "Content Content Content Content Content Content"
+        ". . . . . ."
+        "Footer Footer Footer Footer Footer Footer"
+        ". . . . . .";
     }
   }
 
-  .Skills {
-    grid-area: Skills;
-
-    a {
-      text-decoration: none;
-    }
-
-    p {
-      margin: 0;
-      color: white;
-      font-size: 4vh;
-      font-weight: 600;
-      font-family: Montserrat;
-    }
-
-    .Skill {
-      display: flex;
-      margin-top: 1.5vh;
-      align-items: center;
-
-      p {
-        color: #bcbabc;
-        font-size: 2.8vh;
-      }
-
-      .SkillDot {
-        height: 1vh;
-        background-origin: left;
-        margin-left: 1vh;
-        margin-right: 1.5vw;
-        border-radius: 15px;
-      }
-    }
-  }
-}
-
-.Footer {
-  display: grid;
-  grid-area: Footer;
-  align-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: "Social . . . . . . NavMessage";
-
-  .Social {
-    display: flex;
-    grid-area: Social;
+  .Content {
+    display: grid;
+    grid-area: Content;
     align-items: center;
-    justify-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "Title Title Title . . . . Skills Skills Skills";
 
-    .SocialIcon {
-      fill: white;
-    }
-  }
-
-  .NavMessage {
-    display: flex;
-    color: #bcbabc;
-    align-items: center;
-    grid-area: NavMessage;
-
-    .ScrollMessage {
-      margin-right: 1vh;
+    .Title {
+      grid-area: Title;
 
       p {
         margin: 0;
-        font-size: 2vh;
+        color: white;
+        font-size: 10vh;
+        font-weight: bold;
+        font-family: GothamPro;
+      }
+
+      .TitleBar {
+        width: 4vw;
+        height: 1.8vh;
+        margin-top: 2vh;
+        border-radius: 5px;
+        background: #efa649;
       }
     }
 
-    img {
-      height: 5.5vh;
+    .Skills {
+      grid-area: Skills;
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        margin: 0;
+        color: white;
+        font-size: 4vh;
+        font-weight: 600;
+        white-space: nowrap;
+        font-family: Montserrat;
+      }
+
+      .Skill {
+        display: flex;
+        margin-top: 1.5vh;
+        align-items: center;
+
+        p {
+          color: #bcbabc;
+          font-size: 2.8vh;
+          white-space: nowrap;
+        }
+
+        .SkillDot {
+          height: 1vh;
+          background-origin: left;
+          margin-left: 1vh;
+          margin-right: 1.5vw;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+
+  .Footer {
+    display: grid;
+    grid-area: Footer;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "Social . . . . . . NavMessage";
+
+    @media only screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 14/10) {
+      grid-template-areas: "Social Social . . . . . NavMessage";
+    }
+
+    .Social {
+      display: flex;
+      grid-area: Social;
+      align-items: center;
+      justify-content: space-between;
+
+      .SocialIcon {
+        fill: white;
+      }
+    }
+
+    .NavMessage {
+      display: flex;
+      color: #bcbabc;
+      align-items: center;
+      grid-area: NavMessage;
+
+      .ScrollMessage {
+        margin-right: 1vh;
+
+        p {
+          margin: 0;
+          font-size: 2vh;
+          white-space: nowrap;
+        }
+      }
+
+      img {
+        height: 5.5vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Hero {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: end;
+    background: #161623;
+    scroll-snap-align: start;
+
+    .Container {
+      width: 100%;
+      height: 88vh;
+      display: grid;
+      grid-template-rows: repeat(10, 1fr);
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-areas:
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". Content Content Content Content Content Content Content Content ."
+        ". Content Content Content Content Content Content Content Content ."
+        ". Content Content Content Content Content Content Content Content ."
+        ". . . . . . . . . ."
+        ". Footer Footer Footer Footer Footer Footer Footer Footer ."
+        ". Footer Footer Footer Footer Footer Footer Footer Footer ."
+        ". Footer Footer Footer Footer Footer Footer Footer Footer ."
+        ". Footer Footer Footer Footer Footer Footer Footer Footer .";
+    }
+
+    .Content {
+      display: grid;
+      grid-area: Content;
+      place-items: center flex-start;
+
+      .Title {
+        width: 100%;
+        height: 100%;
+
+        p {
+          margin: 0;
+          color: white;
+          font-size: 8vh;
+          font-weight: bold;
+          font-family: GothamPro;
+        }
+
+        .TitleBar {
+          display: none;
+        }
+
+        .TitleBarMobile {
+          width: 18vw;
+          height: 1.2vh;
+          margin-top: 2vh;
+          border-radius: 4px;
+          background: #efa649;
+        }
+      }
+
+      .Skills {
+        display: none;
+      }
+    }
+
+    .Footer {
+      display: grid;
+      grid-area: Footer;
+      align-items: center;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas:
+        "Social . . . ."
+        "Social . . . ."
+        "Social . NavMessage NavMessage NavMessage"
+        "Social . NavMessage NavMessage NavMessage"
+        ". . . . .";
+
+      .Social {
+        height: 100%;
+        display: flex;
+        grid-area: Social;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .SocialIcon {
+          fill: white;
+        }
+      }
+
+      .NavMessage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        color: #bcbabc;
+        align-items: center;
+        justify-content: flex-end;
+        grid-area: NavMessage;
+
+        .ScrollMessage {
+          margin-right: 1vh;
+
+          p {
+            margin: 0;
+            font-size: 2vh;
+            white-space: nowrap;
+          }
+        }
+
+        img {
+          height: 5.5vh;
+        }
+      }
     }
   }
 }
