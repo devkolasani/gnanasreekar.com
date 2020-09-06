@@ -40,47 +40,50 @@ const MenuMobile = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-      <motion.div
-        initial={{ display: "none", height: "0vh" }}
-        animate={{
-          display: status ? "grid" : "none",
-          height: status ? "88vh" : "0vh",
-        }}
-        className={styles.Navigation}
-      >
-        <motion.div className={styles.NavLinks}>
-          <Link
-            spy={true}
-            to="Work"
-            smooth={true}
-            duration={1000}
-            activeClass="active"
-            className={styles.NavLink}
-          >
-            <p>Work</p>
-          </Link>
-          <Link
-            to="About"
-            spy={true}
-            smooth={true}
-            duration={1000}
-            activeClass="active"
-            className={styles.NavLink}
-          >
-            <p>About</p>
-          </Link>
-          <Link
-            to="Contact"
-            spy={true}
-            smooth={true}
-            duration={1000}
-            activeClass="active"
-            className={styles.NavLink}
-          >
-            <p>Contact</p>
-          </Link>
+      <AnimatePresence>
+        <motion.div
+          initial={{ display: "none", height: "0vh" }}
+          animate={{
+            display: status ? "grid" : "none",
+            height: status ? "88vh" : "0vh",
+          }}
+          exit={{ height: "0vh" }}
+          className={styles.Navigation}
+        >
+          <motion.div className={styles.NavLinks}>
+            <Link
+              spy={true}
+              to="Work"
+              smooth={true}
+              duration={1000}
+              activeClass="active"
+              className={styles.NavLink}
+            >
+              <p>Work</p>
+            </Link>
+            <Link
+              to="About"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              activeClass="active"
+              className={styles.NavLink}
+            >
+              <p>About</p>
+            </Link>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              activeClass="active"
+              className={styles.NavLink}
+            >
+              <p>Contact</p>
+            </Link>
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </AnimatePresence>
     </motion.div>
   );
 };

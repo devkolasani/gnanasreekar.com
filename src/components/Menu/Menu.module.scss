@@ -1,3 +1,9 @@
+@media only screen and (max-width: 500px) {
+  .Menu {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .Menu {
     width: 100%;
@@ -65,14 +71,15 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 500px) and (max-width: 900px) {
   .MenuItems {
-    width: 40%;
+    width: 70%;
+    font-size: 2.8vh;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .Menu {
-    display: none;
+@media only screen and (min-width: 1000px) {
+  .MenuItems {
+    width: 40%;
   }
 }

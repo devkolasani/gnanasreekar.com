@@ -1,5 +1,6 @@
 @media only screen and (max-width: 500px) {
   .Menu {
+    z-index: 2;
     width: 100%;
     position: fixed;
     min-height: 12vh;
@@ -37,6 +38,7 @@
     .Navigation {
       height: 88vh;
       display: grid;
+      background: #161623;
       place-items: center flex-start;
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "." "NavLinks" ".";

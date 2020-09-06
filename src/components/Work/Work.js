@@ -84,6 +84,14 @@ const Work = () => {
                 </a>
               </div>
             </motion.div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={work["link"]}
+              className={styles.LinkMobile}
+            >
+              <p>view</p>
+            </a>
           </motion.div>
         </AnimatePresence>
         <WorkImages images={work["images"]} />

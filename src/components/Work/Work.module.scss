@@ -1,4 +1,276 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
+  .Work {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: end;
+    background: #161623;
+    scroll-snap-align: start;
+
+    .Container {
+      width: 100%;
+      height: 88vh;
+      display: grid;
+      grid-template-rows: repeat(10, 1fr);
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-areas:
+        ". Title Title Title . . . . . ."
+        ". Title Title Title . . . . . ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Details Details Details Details Details Details Details Details ."
+        ". Navigation Navigation Navigation Navigation . . . . .";
+    }
+  }
+
+  .Title {
+    display: grid;
+    grid-area: Title;
+    place-items: center flex-start;
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 4.5vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .TitleBar {
+      width: 12vw;
+      height: 1vh;
+      margin-top: 0.8vh;
+      border-radius: 5px;
+      background: #efa649;
+    }
+  }
+
+  .Details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-area: Details;
+    align-items: center;
+    justify-content: space-between;
+
+    .Name {
+      margin: 0;
+      color: #efa649;
+      font-size: 5vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .Description {
+      display: none;
+    }
+
+    .Links {
+      display: none;
+    }
+
+    .LinkMobile {
+      text-decoration: none;
+
+      p {
+        margin: 0;
+        font-size: 3vh;
+        color: #bcbabc;
+        font-weight: 600;
+        font-family: Montserrat;
+      }
+    }
+  }
+
+  .Images {
+    z-index: 0;
+    display: grid;
+    grid-area: Images;
+    position: relative;
+    place-items: center;
+
+    .ImageBackground {
+      width: 32vh;
+      height: 32vh;
+      border-radius: 50%;
+      position: absolute;
+      background: #efa649;
+    }
+
+    .Image {
+      height: 40vh;
+      position: absolute;
+    }
+  }
+
+  .Navigation {
+    display: grid;
+    grid-area: Navigation;
+    place-items: center;
+
+    .NavIndicator {
+      display: none;
+    }
+
+    .NavLinks {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .NavLink {
+        margin: 0;
+        font-size: 3vh;
+        color: #bcbabc;
+        font-weight: 600;
+        font-family: Montserrat;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .Work {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: end;
+    background: #161623;
+    scroll-snap-align: start;
+
+    .Container {
+      width: 100%;
+      height: 88vh;
+      display: grid;
+      grid-template-rows: repeat(10, 1fr);
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-areas:
+        ". Title Title Title . . . . . ."
+        ". Title Title Title . . . . . ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Images Images Images Images Images Images Images Images ."
+        ". Details Details Details Details Details Details Details Details ."
+        ". Navigation Navigation Navigation . . . . . .";
+    }
+  }
+
+  .Title {
+    display: grid;
+    grid-area: Title;
+    place-items: center flex-start;
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 4.5vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .TitleBar {
+      width: 8vw;
+      height: 0.9vh;
+      margin-top: 0.8vh;
+      border-radius: 3px;
+      background: #efa649;
+    }
+  }
+
+  .Details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-area: Details;
+    align-items: center;
+    justify-content: space-between;
+
+    .Name {
+      margin: 0;
+      color: #efa649;
+      font-size: 5vh;
+      font-weight: 600;
+      font-family: Montserrat;
+    }
+
+    .Description {
+      display: none;
+    }
+
+    .Links {
+      display: none;
+    }
+
+    .LinkMobile {
+      text-decoration: none;
+
+      p {
+        margin: 0;
+        font-size: 3vh;
+        color: #bcbabc;
+        font-weight: 600;
+        font-family: Montserrat;
+      }
+    }
+  }
+
+  .Images {
+    z-index: 0;
+    display: grid;
+    grid-area: Images;
+    position: relative;
+    place-items: center;
+
+    .ImageBackground {
+      width: 32vh;
+      height: 32vh;
+      border-radius: 50%;
+      position: absolute;
+      background: #efa649;
+    }
+
+    .Image {
+      height: 40vh;
+      position: absolute;
+    }
+  }
+
+  .Navigation {
+    display: grid;
+    grid-area: Navigation;
+    place-items: center;
+
+    .NavIndicator {
+      display: none;
+    }
+
+    .NavLinks {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .NavLink {
+        margin: 0;
+        font-size: 3vh;
+        color: #bcbabc;
+        font-weight: 600;
+        font-family: Montserrat;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .Work {
     width: 100%;
     height: 100vh;
@@ -102,6 +374,10 @@
           }
         }
       }
+
+      .LinkMobile {
+        display: none;
+      }
     }
 
     .Images {
@@ -152,11 +428,5 @@
         }
       }
     }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .Work {
-    display: none;
   }
 }
