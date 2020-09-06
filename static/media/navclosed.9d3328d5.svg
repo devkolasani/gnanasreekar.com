@@ -1,0 +1,10 @@
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <rect rx="10" id="svg_1" height="18" width="75" y="15" x="0" stroke-opacity="null" stroke-width="NaN"
+            stroke="null" fill="#bcbabc" />
+        <rect rx="10" id="svg_3" height="18" width="75" y="117" x="75" stroke-opacity="null" stroke-width="null"
+            stroke="null" fill="#bcbabc" />
+        <rect rx="10" id="svg_5" height="18" width="150" y="66" x="0" stroke-opacity="null" stroke-width="NaN"
+            stroke="null" fill="#efa649" />
+    </g>
+</svg>
