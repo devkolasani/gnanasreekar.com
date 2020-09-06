@@ -23,6 +23,12 @@ I'm a tech enthusiast, have a YouTube channel that focuses on all things tech.`;
         <div className={styles.Description}>
           <p>{desc}</p>
         </div>
+        <div className={styles.DescriptionMobile}>
+          <p>
+            Hello, I'm Gnana Sreekar. How's it going? I'm an Android developer
+            based in India and a hardware geek.
+          </p>
+        </div>
         <div className={styles.Download}>
           <a
             href={Resume}
